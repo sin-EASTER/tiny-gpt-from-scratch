@@ -31,8 +31,12 @@ def build_itos(vocab):
     return {idx:ch for idx, ch in enumerate(vocab)}
     pass
 
-# Step 4 - encode_char (not yet solved)
-# TODO: implement
+# Step 4 - encode_char
+def encode_char(ch, stoi):
+    """Return the integer token id for a single character ch using stoi."""
+    # TODO: look up ch in the stoi mapping and return its id
+    return stoi.get(ch)
+    pass
 
 # Step 5 - encode_string (not yet solved)
 # TODO: implement
