@@ -192,8 +192,14 @@ def array_log(arr):
     return np.log(arr)
     pass
 
-# Step 23 - sum_all (not yet solved)
-# TODO: implement
+# Step 23 - sum_all
+import numpy as np
+
+def sum_all(arr):
+    """Return the sum of every element of arr as a scalar."""
+    # TODO: collapse every element of arr into a single scalar total
+    return np.sum(arr)
+    pass
 
 # Step 24 - sum_axis0 (not yet solved)
 # TODO: implement
