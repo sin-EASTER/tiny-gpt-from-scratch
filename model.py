@@ -211,8 +211,14 @@ def sum_axis0(arr):
     return np.sum(arr,axis=0)
     pass
 
-# Step 25 - sum_axis1 (not yet solved)
-# TODO: implement
+# Step 25 - sum_axis1
+import numpy as np
+
+def sum_axis1(arr):
+    """Sum a 2D array along axis 1, returning a 1D array of row sums."""
+    # TODO: collapse the column dimension by summing each row
+    return np.sum(arr,axis=1)
+    pass
 
 # Step 26 - max_along_axis (not yet solved)
 # TODO: implement
