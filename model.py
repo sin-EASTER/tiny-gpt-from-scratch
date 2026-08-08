@@ -174,8 +174,14 @@ def vector_matrix_broadcast_add(matrix, vector):
     return vector+matrix
     pass
 
-# Step 21 - array_exp (not yet solved)
-# TODO: implement
+# Step 21 - array_exp
+import numpy as np
+
+def array_exp(arr):
+    """Return the elementwise exponential of arr."""
+    # TODO: apply elementwise exponential to arr and return the result
+    return np.exp(arr)
+    pass
 
 # Step 22 - array_log (not yet solved)
 # TODO: implement
