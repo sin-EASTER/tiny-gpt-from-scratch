@@ -384,8 +384,14 @@ def sample_random_batch_offsets(data_len, block_size, batch_size, rng):
     )
     pass
 
-# Step 42 - stack_x_batch (not yet solved)
-# TODO: implement
+# Step 42 - stack_x_batch
+import numpy as np
+
+def stack_x_batch(data, offsets, block_size):
+    """Stack per-offset X windows into a 2D batch matrix of shape (B, block_size)."""
+    # TODO: for each offset, take a length-block_size slice of data and stack them as rows
+    return np.stack([ slice_x_at_offset(data, offset, block_size) for offset in offsets ])
+    pass
 
 # Step 43 - stack_y_batch (not yet solved)
 # TODO: implement
